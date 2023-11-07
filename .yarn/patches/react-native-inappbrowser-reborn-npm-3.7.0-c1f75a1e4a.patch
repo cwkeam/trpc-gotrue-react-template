@@ -1,0 +1,39 @@
+diff --git a/.idea/.gitignore b/.idea/.gitignore
+new file mode 100644
+index 0000000000000000000000000000000000000000..b58b603fea78041071d125a30db58d79b3d49217
+--- /dev/null
++++ b/.idea/.gitignore
+@@ -0,0 +1,5 @@
++# Default ignored files
++/shelf/
++/workspace.xml
++# Editor-based HTTP Client requests
++/httpRequests/
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+new file mode 100644
+index 0000000000000000000000000000000000000000..94a25ca1fac6831258e9588d0f4977d044b38dc1
+--- /dev/null
++++ b/.idea/workspace.xml
+@@ -0,0 +1,8 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="PropertiesComponent">{
++  &quot;keyToString&quot;: {
++    &quot;settings.editor.selected.configurable&quot;: &quot;settings.sync&quot;
++  }
++}</component>
++</project>
+\ No newline at end of file
+diff --git a/android/build.gradle b/android/build.gradle
+index ba37f5e3ff97a142c243d63db243d5843062a8a0..b18204c0a3abf2e82e83ea1cef475a2fb6eaf200 100644
+--- a/android/build.gradle
++++ b/android/build.gradle
+@@ -65,7 +65,6 @@ dependencies {
+     def androidXAnnotation = safeExtGet('androidXAnnotation', androidXVersion)
+     def androidXBrowser = safeExtGet('androidXBrowser', androidXVersion)
+     implementation "androidx.annotation:annotation:$androidXAnnotation"
+-    implementation "androidx.browser:browser:$androidXBrowser"
++    implementation "androidx.browser:browser:1.3.0"
+   }
+ }
+-  

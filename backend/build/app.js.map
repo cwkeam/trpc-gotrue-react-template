@@ -1,0 +1,1 @@
+{"version":3,"sources":["../src/app.ts"],"sourcesContent":["import routes from '@/routes'\n\nconst appRouter = routes\nexport default appRouter\n\nexport type AppRouter = typeof appRouter\n"],"names":["appRouter","routes"],"mappings":";;;;+BAGA;;;eAAA;;;+DAHmB;;;;;;AAEnB,MAAMA,YAAYC,eAAM;MACxB,WAAeD"}

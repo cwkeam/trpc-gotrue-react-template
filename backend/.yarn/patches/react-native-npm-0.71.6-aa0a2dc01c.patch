@@ -1,0 +1,47 @@
+diff --git a/.idea/.gitignore b/.idea/.gitignore
+new file mode 100644
+index 0000000000000000000000000000000000000000..b58b603fea78041071d125a30db58d79b3d49217
+--- /dev/null
++++ b/.idea/.gitignore
+@@ -0,0 +1,5 @@
++# Default ignored files
++/shelf/
++/workspace.xml
++# Editor-based HTTP Client requests
++/httpRequests/
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+new file mode 100644
+index 0000000000000000000000000000000000000000..94a25ca1fac6831258e9588d0f4977d044b38dc1
+--- /dev/null
++++ b/.idea/workspace.xml
+@@ -0,0 +1,8 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="PropertiesComponent">{
++  &quot;keyToString&quot;: {
++    &quot;settings.editor.selected.configurable&quot;: &quot;settings.sync&quot;
++  }
++}</component>
++</project>
+\ No newline at end of file
+diff --git a/Libraries/Lists/VirtualizedList.js b/Libraries/Lists/VirtualizedList.js
+index e948a85bde49d35c05a41136391f38346bf51a68..ac5745355cd10feab129adb536e54bdd493cd099 100644
+--- a/Libraries/Lists/VirtualizedList.js
++++ b/Libraries/Lists/VirtualizedList.js
+@@ -1030,11 +1030,11 @@ export default class VirtualizedList extends StateSafePureComponent<
+               this.props.scrollEnabled !== false
+             ) {
+               // TODO (T46547044): use React.warn once 16.9 is sync'd: https://github.com/facebook/react/pull/15170
+-              console.error(
+-                'VirtualizedLists should never be nested inside plain ScrollViews with the same ' +
+-                  'orientation because it can break windowing and other functionality - use another ' +
+-                  'VirtualizedList-backed container instead.',
+-              );
++              // console.error(
++              //   'VirtualizedLists should never be nested inside plain ScrollViews with the same ' +
++              //     'orientation because it can break windowing and other functionality - use another ' +
++              //     'VirtualizedList-backed container instead.',
++              // );
+               this._hasWarned.nesting = true;
+             }
+             return innerRet;
